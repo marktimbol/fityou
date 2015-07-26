@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Raleway";
+  font-size: 13px;
+  background: url("../images/bg.png") no-repeat top center; }
+
+h1, h2 {
+  font-weight: 700; }
+
+h3, h4, h5, h6 {
+  font-weight: 300; }
+
+.join-us-text {
+  padding: 20px 0px; }
+  .join-us-text a {
+    color: #333; }
+
+ul li {
+  list-style: none; }
+
+img.full-width {
+  width: 100%; }
+
+p.lead {
+  font-size: 16px !important; }
+
+.row.no-gutter {
+  margin-right: 0;
+  margin-left: 0; }
+  .row.no-gutter figure, .row.no-gutter .col-md-6, .row.no-gutter .col-md-4, .row.no-gutter .col-md-8 {
+    padding-right: 0;
+    padding-left: 0; }
+
+.row .apply-padding {
+  padding: 20px; }
+
+header h1 a {
+  color: #333; }
+  header h1 a:hover {
+    text-decoration: none;
+    color: #ff6c00; }
+
+.light h3 {
+  color: white;
+  font-weight: bold; }
+
+.light p {
+  color: white; }
+
+.light ul li {
+  list-style: circle;
+  color: white;
+  font-size: 13px;
+  margin-bottom: 10px; }
+
+.dark h3 {
+  color: #333;
+  font-weight: bold; }
+
+.dark p {
+  color: #333; }
+
+.background {
+  padding: 40px;
+  overflow: hidden; }
+  .background h3 {
+    font-weight: bold; }
+  .background p {
+    font-size: 13px; }
+  .background .icon {
+    text-align: center; }
+    .background .icon i {
+      color: white; }
+  .background.clear-padding {
+    padding: 0px; }
+  .background.blue {
+    background: #0065f5; }
+  .background.pink {
+    background: #EE268B; }
+  .background.yellow {
+    background: #dad734; }
+  .background.gray {
+    background: #3E3E40; }
+  .background.orange {
+    background: #ff6c00; }
+  .background.green {
+    background: #8bd30e; }
+  .background.white {
+    background: white; }
+
+nav.top-nav {
+  margin-top: 25px; }
+  nav.top-nav ul li {
+    display: inline-block;
+    margin: 0px 10px; }
+    nav.top-nav ul li a {
+      display: block;
+      color: #333;
+      font-size: 16px;
+      font-weight: 700; }
+      nav.top-nav ul li a:hover {
+        color: #ff6c00;
+        text-decoration: none; }
+
+.grid {
+  position: relative;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center; }
+  .grid figure {
+    position: relative;
+    text-align: center;
+    cursor: pointer; }
+    .grid figure img {
+      position: relative;
+      display: block;
+      min-height: 100%;
+      max-width: 100%; }
+    .grid figure figcaption {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 1.25em;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden; }
+      .grid figure figcaption::before, .grid figure figcaption::after {
+        pointer-events: none; }
+    .grid figure h2 {
+      word-spacing: -0.15em;
+      font-weight: 300;
+      margin: 0;
+      color: white; }
+      .grid figure h2 span {
+        font-weight: 800;
+        color: white; }
+    .grid figure p {
+      color: white;
+      letter-spacing: 1px;
+      font-size: 68.5%;
+      margin: 0; }
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0; }
+
+figure.effect-sadie figcaption::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  opacity: 0;
+  -webkit-transform: translate3d(0, 50%, 0);
+  transform: translate3d(0, 50%, 0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s; }
+
+figure.effect-sadie.orange figcaption::before {
+  background: #ff6c00; }
+
+figure.effect-sadie.blue figcaption::before {
+  background: #0065f5; }
+
+figure.effect-sadie.yellow figcaption::before {
+  background: #dad734; }
+
+figure.effect-sadie.green figcaption::before {
+  background: #8bd30e; }
+
+figure.effect-sadie h3 {
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  color: white;
+  -webkit-transition: -webkit-transform 0.35s, color 0.35s;
+  transition: transform 0.35s, color 0.35s;
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0); }
+  figure.effect-sadie h3 i {
+    margin-bottom: 15px; }
+
+figure.effect-sadie p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2em;
+  width: 100%;
+  opacity: 0;
+  -webkit-transform: translate3d(0, 10px, 0);
+  transform: translate3d(0, 10px, 0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s; }
+
+figure.effect-sadie:hover h3 {
+  color: #fff;
+  -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
+  transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0); }
+
+figure.effect-sadie:hover figcaption::before {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+figure.effect-sadie:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+figure .background {
+  padding: 20px; }
+
+.subpage h2 {
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  color: white;
+  padding: 20px;
+  margin-bottom: 0; }
+
+.subpage .bg {
+  height: 494px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .subpage .bg .opacity {
+    background: rgba(21, 21, 21, 0.7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .subpage .bg .content {
+    position: absolute;
+    margin-top: 9%; }
+    .subpage .bg .content i {
+      color: white; }
+    .subpage .bg .content h3 {
+      color: white;
+      margin-top: 0; }
+  .subpage .bg.about-us {
+    background: url("../images/about-us-bg.jpg"); }
+  .subpage .bg.quickie-zone {
+    background: url("../images/quickie-zone-bg.jpg"); }
+
+.subpage .our-clubs {
+  padding: 20px;
+  overflow: hidden;
+  background: white; }
+  .subpage .our-clubs i {
+    font-size: 6em;
+    margin-top: 25px;
+    margin-left: -30px; }
+  .subpage .our-clubs h3 {
+    font-size: 30px;
+    font-weight: bold; }
+
+footer h4 {
+  color: white;
+  padding-bottom: 10px;
+  margin-bottom: 20px; }
+
+footer ul li a {
+  color: white; }
+  footer ul li a:hover {
+    color: white; }
+
+footer ul.social-icons li {
+  margin-right: 10px;
+  display: inline-block; }
